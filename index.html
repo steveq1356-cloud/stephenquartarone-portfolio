@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W7C1K97H4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5W7C1K97H4');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Stephen Quartarone - Engineering Portfolio</title>
+<style>
+:root{
+  --paper:#f5f4ef;--white:#fff;--ink:#101213;--muted:#676c70;
+  --line:#d8d7d1;--accent:#a93229;--dark:#17191a;
+  --shadow:0 18px 45px rgba(18,20,22,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased
+}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+.site-header{
+  position:sticky;top:0;z-index:30;background:rgba(245,244,239,.94);
+  backdrop-filter:blur(15px);border-bottom:1px solid var(--line)
+}
+.nav{
+  max-width:1240px;height:72px;padding:0 28px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between
+}
+.brand{font-size:18px;font-weight:780;letter-spacing:-.02em}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+main{max-width:1240px;margin:auto;padding:0 28px}
+.eyebrow,.meta,.section-kicker{
+  margin:0;text-transform:uppercase;letter-spacing:.13em;
+  font-size:12px;font-weight:800;color:var(--accent)
+}
+.hero{
+  min-height:510px;display:grid;grid-template-columns:1.4fr .8fr;gap:60px;
+  align-items:end;padding:88px 0 68px;border-bottom:1px solid var(--line)
+}
+h1{
+  margin:20px 0 24px;font-size:clamp(58px,8vw,108px);
+  line-height:.91;letter-spacing:-.065em;max-width:900px
+}
+.hero-copy{font-size:21px;line-height:1.55;color:var(--muted);max-width:570px;margin:0}
+.hero-side strong{display:block;font-size:60px;letter-spacing:-.05em}
+.hero-side span{display:block;color:var(--muted);line-height:1.5}
+.projects-head{
+  display:flex;justify-content:space-between;gap:40px;align-items:end;
+  padding:72px 0 30px
+}
+.projects-head h2{font-size:46px;letter-spacing:-.045em;margin:10px 0 0}
+.projects-head p{max-width:440px;color:var(--muted);line-height:1.55;margin:0}
+.project-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;padding-bottom:88px
+}
+.project-card{
+  min-width:0;background:var(--white);border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease
+}
+.project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.thumb-wrap{
+  position:relative;aspect-ratio:16/9;overflow:hidden;
+  background:#ecebe6;display:grid;place-items:center
+}
+.thumb-wrap img{
+  width:100%;height:100%;object-fit:cover;transition:transform .35s ease
+}
+.thumb-wrap.contain img{object-fit:contain;padding:18px;background:#f8f8f6}
+.project-card:hover .thumb-wrap img{transform:scale(1.02)}
+.view-label{
+  position:absolute;right:16px;bottom:16px;padding:9px 12px;
+  border-radius:999px;background:rgba(255,255,255,.94);
+  font-size:12px;font-weight:800;opacity:0;transform:translateY(5px);
+  transition:.25s ease
+}
+.project-card:hover .view-label{opacity:1;transform:none}
+.project-copy{padding:22px 22px 24px}
+.project-copy h2{margin:9px 0 10px;font-size:27px;letter-spacing:-.035em}
+.summary{margin:0;color:var(--muted);line-height:1.55;min-height:50px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{
+  padding:7px 10px;border:1px solid var(--line);border-radius:999px;
+  font-size:12px;font-weight:700;background:#fafaf8
+}
+.about-section,.contact-section{border-top:1px solid var(--line);padding:82px 0}
+.about-grid{
+  display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:start;margin-top:28px
+}
+.about-intro h2,.contact-grid h2{
+  margin:0;font-size:clamp(46px,6vw,76px);line-height:.97;letter-spacing:-.055em
+}
+.about-copy{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.about-copy p{margin:0;color:var(--muted);font-size:18px;line-height:1.72}
+.about-facts{
+  grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px
+}
+.fact{
+  min-height:138px;padding:22px;border:1px solid var(--line);
+  border-radius:18px;background:var(--white)
+}
+.fact strong{
+  display:block;font-size:26px;line-height:1.05;letter-spacing:-.035em;margin-bottom:9px
+}
+.fact span{color:var(--muted);font-size:14px;line-height:1.5}
+.focus-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.focus-list span{
+  padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:var(--white);
+  font-size:13px;font-weight:700
+}
+.contact-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:end
+}
+.contact-copy{
+  margin:22px 0 0;max-width:700px;color:var(--muted);font-size:20px;line-height:1.65
+}
+.contact-actions{display:grid;gap:12px}
+.contact-link{
+  display:flex;justify-content:space-between;align-items:center;
+  min-height:66px;padding:0 20px;border:1px solid var(--line);
+  border-radius:16px;background:var(--white);font-weight:760;
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.contact-link:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.contact-link small{color:var(--muted);font-weight:600}
+footer{
+  border-top:1px solid var(--line);padding:38px 0 50px;
+  display:flex;justify-content:space-between;color:var(--muted);font-size:14px
+}
+.case-nav-back{font-weight:750}
+.case-hero{padding:72px 0 46px}
+.case-hero h1{font-size:clamp(54px,7.5vw,100px);max-width:1080px}
+.case-subtitle{font-size:20px;color:var(--muted);line-height:1.5;max-width:860px}
+.case-meta-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:42px
+}
+.case-meta-item{background:var(--white);padding:22px}
+.case-meta-item small{
+  display:block;color:var(--muted);font-size:11px;text-transform:uppercase;
+  letter-spacing:.12em;font-weight:800;margin-bottom:8px
+}
+.case-meta-item strong{font-size:15px;line-height:1.4}
+.hero-media{
+  border-radius:24px;overflow:hidden;background:#f0efeb;box-shadow:var(--shadow);
+  margin:0 auto 78px;min-height:340px;display:grid;place-items:center
+}
+.hero-media img{
+  width:100%;height:auto;max-height:720px;object-fit:contain;background:#f8f8f6
+}
+.hero-media.photo img{object-fit:cover;max-height:none;aspect-ratio:16/9}
+.impact-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0 0 82px
+}
+.impact-card{
+  background:var(--dark);color:#fff;border-radius:18px;padding:28px;min-height:160px
+}
+.impact-card strong{display:block;font-size:42px;letter-spacing:-.045em;margin-bottom:10px}
+.impact-card span{color:#c8cccf;line-height:1.5}
+.story-section{
+  display:grid;grid-template-columns:.62fr 1.38fr;gap:76px;padding:78px 0;border-top:1px solid var(--line)
+}
+.story-section h2{margin:8px 0 0;font-size:42px;letter-spacing:-.045em;line-height:1}
+.story-copy p{margin:0 0 24px;color:#3f4448;font-size:18px;line-height:1.78}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.gallery figure{
+  margin:0;background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden
+}
+.gallery figure.wide{grid-column:1/-1}
+.gallery img{
+  width:100%;height:420px;object-fit:contain;background:#f7f7f5;padding:12px
+}
+.gallery figure.photo img{object-fit:cover;padding:0}
+.gallery .wide img{height:auto;max-height:720px}
+figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
+.video-frame{
+  border-radius:20px;overflow:hidden;background:#000;margin-top:36px;box-shadow:var(--shadow)
+}
+.video-frame video{width:100%;max-height:760px;background:#000}
+.contributions{
+  list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px
+}
+.contributions li{
+  position:relative;padding:18px 18px 18px 44px;background:var(--white);
+  border:1px solid var(--line);border-radius:14px;line-height:1.55
+}
+.contributions li:before{
+  content:"✓";position:absolute;left:18px;top:18px;color:var(--accent);font-weight:900
+}
+.next-project{
+  margin:72px 0 90px;padding:34px;border-radius:20px;background:var(--dark);color:#fff;
+  display:flex;justify-content:space-between;align-items:center
+}
+.next-project small{
+  display:block;color:#bfc4c7;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:8px
+}
+.next-project strong{font-size:30px}
+@media(max-width:800px){
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;gap:35px;min-height:auto;padding-top:68px}
+  .hero-side strong{font-size:48px}
+  .projects-head{align-items:start;flex-direction:column}
+  .project-grid{grid-template-columns:1fr}
+  .about-grid,.contact-grid,.story-section{grid-template-columns:1fr;gap:38px}
+  .about-copy{grid-template-columns:1fr}
+  .about-facts,.impact-strip,.case-meta-grid{grid-template-columns:1fr}
+  .about-section,.contact-section{padding:64px 0}
+  .gallery,.contributions{grid-template-columns:1fr}
+  .gallery figure.wide{grid-column:auto}
+  .gallery img{height:auto;max-height:600px}
+  .hero-media{min-height:0}
+  footer{flex-direction:column;gap:10px}
+}
+
+/* Final image-fit and navigation refinements */
+.thumb-wrap img{
+  object-fit:contain !important;
+  padding:14px;
+  background:#f8f8f6;
+}
+.hero-media img{
+  object-fit:contain !important;
+  width:100%;
+  height:auto !important;
+  max-height:680px;
+  padding:16px;
+  background:#f8f8f6;
+}
+.hero-media.photo img{
+  object-fit:contain !important;
+  aspect-ratio:auto !important;
+  max-height:680px !important;
+}
+.gallery img,
+.gallery figure.photo img{
+  object-fit:contain !important;
+  height:auto !important;
+  max-height:620px;
+  padding:12px !important;
+  background:#f8f8f6;
+}
+.project-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin:72px 0 90px;
+}
+.project-actions .next-project{
+  margin:0;
+}
+@media(max-width:800px){
+  .project-actions{grid-template-columns:1fr}
+}
+
+.hero{
+  display:block !important;
+  min-height:auto !important;
+  padding:96px 0 78px !important;
+}
+.hero > div:first-child{max-width:950px}
+
+/* v9 image sizing and summary-page refinements */
+.thumb-wrap{
+  aspect-ratio:16/10 !important;
+  min-height:0 !important;
+}
+.thumb-wrap img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:12px !important;
+  background:#f8f8f6 !important;
+}
+.hero-media{
+  width:100%;
+  max-width:1120px;
+  min-height:0 !important;
+}
+.hero-media img{
+  width:100% !important;
+  height:auto !important;
+  max-height:620px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:14px !important;
+}
+.gallery{
+  align-items:start;
+}
+.gallery img,
+.gallery figure.photo img{
+  width:100% !important;
+  height:auto !important;
+  max-height:560px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:10px !important;
+}
+.gallery figure.wide img{
+  max-height:640px !important;
+}
+.real-world-photo img{
+  max-height:720px !important;
+}
+.tldr-hero{
+  padding:82px 0 52px;
+  border-bottom:1px solid var(--line);
+}
+.tldr-hero h1{
+  font-size:clamp(52px,7vw,90px);
+  max-width:980px;
+}
+.tldr-intro{
+  max-width:780px;
+  color:var(--muted);
+  font-size:20px;
+  line-height:1.6;
+}
+.tldr-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+  padding:50px 0 90px;
+}
+.tldr-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+  display:flex;
+  flex-direction:column;
+  min-height:270px;
+}
+.tldr-card .meta{margin-bottom:10px}
+.tldr-card h2{
+  margin:0 0 14px;
+  font-size:28px;
+  letter-spacing:-.035em;
+}
+.tldr-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+  font-size:16px;
+}
+.tldr-card .tldr-link{
+  margin-top:auto;
+  padding-top:22px;
+  font-weight:800;
+}
+.inline-callout{
+  margin:28px 0 0;
+  padding:20px 22px;
+  border-left:3px solid var(--accent);
+  background:rgba(255,255,255,.65);
+  color:#3f4448;
+  line-height:1.65;
+}
+@media(max-width:800px){
+  .tldr-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<a class="brand" href="index.html">Stephen Quartarone</a>
+<div class="nav-links">
+<a href="index.html#projects">Projects</a><a href="tldr.html">TLDR</a>
+<a href="index.html#about">About</a>
+<a href="index.html#contact">Contact</a>
+<a href="resume.pdf" rel="noopener" target="_blank">Résumé</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<p class="eyebrow">Mechanical Engineering Portfolio</p>
+<h1>View my favorite works</h1>
+<p class="hero-copy">A selection of engineering projects spanning manufacturing, mechanical design, robotics, CAD, 3D printing, analysis, and hands-on implementation.</p>
+</div>
+</section>
+<section id="projects">
+<div class="projects-head">
+<div>
+<p class="eyebrow">Selected Work</p>
+<h2>Explore a project.</h2>
+</div>
+<p>Each project opens into a full case study covering the problem, design process, manufacturing, analysis, and result.</p>
+</div>
+<div class="project-grid">
+<a class="project-card" href="dual-cavity.html">
+<div class="thumb-wrap contain">
+<img alt="Dual-Cavity Polyurethane Mold" src="dual-thumb.jpg"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Manufacturing · 2026</p>
+<h2>Dual-Cavity Polyurethane Mold</h2>
+<p class="summary">Designed a dual-cavity production mold to improve throughput, floor-space efficiency, and operator safety.</p>
+<div class="tags"><span class="tag">Mechanical Design</span><span class="tag">DFM</span><span class="tag">Process Optimization</span></div>
+</div>
+</a>
+<a class="project-card" href="swing-bolt.html">
+<div class="thumb-wrap">
+<img alt="Swing Bolt Mold Optimization" src="swing-thumb.png"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Manufacturing · 2026</p>
+<h2>Swing Bolt Mold Optimization</h2>
+<p class="summary">Reduced demold time by 83% for a process completed 20-40 times per day.</p>
+<div class="tags"><span class="tag">Safety</span><span class="tag">Machining</span><span class="tag">Assembly</span></div>
+</div>
+</a>
+<a class="project-card" href="mold-extensions.html">
+<div class="thumb-wrap">
+<img alt="Polyurethane Mold Extension System" src="extensions-installed.jpg"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Manufacturing · 2026</p>
+<h2>Polyurethane Mold Extension System</h2>
+<p class="summary">Designed, machined, and assembled a two-week production solution that met an urgent new part specification.</p>
+<div class="tags"><span class="tag">Rapid Manufacturing</span><span class="tag">Machining</span><span class="tag">Project Ownership</span></div>
+</div>
+</a>
+<a class="project-card" href="test-molds.html">
+<div class="thumb-wrap contain">
+<img alt="Polyurethane Test Molds" src="test-thumb-redacted.png"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Manufacturing · 2026</p>
+<h2>Polyurethane Test Molds</h2>
+<p class="summary">Developed six production test molds and a complete rolling test system for daily material evaluation.</p>
+<div class="tags"><span class="tag">Tooling Design</span><span class="tag">Project Management</span><span class="tag">Vendor Coordination</span></div>
+</div>
+</a>
+<a class="project-card" href="wire-saw.html">
+<div class="thumb-wrap contain">
+<img alt="Temporary Wire Saw Containment Enclosure" src="wire-thumb.jpg"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Manufacturing · 2026</p>
+<h2>Temporary Wire Saw Containment Enclosure</h2>
+<p class="summary">Created a rapid, low-cost enclosure to eliminate an airborne dust hazard during a critical repair.</p>
+<div class="tags"><span class="tag">Rapid Prototyping</span><span class="tag">Safety</span><span class="tag">Fabrication</span></div>
+</div>
+</a>
+<a class="project-card" href="warehouse-robot.html">
+<div class="thumb-wrap">
+<img alt="Autonomous Mobile Robot" src="robot-thumb.jpg"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Northeastern · Cornerstone</p>
+<h2>Autonomous Mobile Robot</h2>
+<p class="summary">Designed and iterated a 3D-printed scissor-lift system for an autonomous warehouse robot.</p>
+<div class="tags"><span class="tag">Fusion 360</span><span class="tag">Arduino</span><span class="tag">Robotics</span></div>
+</div>
+</a>
+<a class="project-card" href="parallettes.html">
+<div class="thumb-wrap">
+<img alt="Parallette Gym Equipment" src="parallette-render-1.jpg"/>
+<span class="view-label">View project ↗</span>
+</div>
+<div class="project-copy">
+<p class="meta">Personal Project</p>
+<h2>Parallette Gym Equipment</h2>
+<p class="summary">Designed, printed, tested, and validated a 3D-printed parallette using FEA and real-world calisthenics use.</p>
+<div class="tags"><span class="tag">3D Printing</span><span class="tag">FEA</span><span class="tag">Product Design</span></div>
+</div>
+</a>
+</div>
+</section>
+<section class="about-section" id="about">
+<p class="section-kicker">About Me</p>
+<div class="about-grid">
+<div class="about-intro">
+<h2>Stephen Quartarone</h2>
+<div class="focus-list">
+<span>Mechanical Design</span><span>Manufacturing</span><span>Robotics</span>
+<span>Aerospace</span><span>Rapid Prototyping</span><span>3D Printing</span>
+</div>
+</div>
+<div class="about-copy">
+<p>I specialize in turning engineering problems into practical, well-designed solutions, from research and concept development through CAD, manufacturing, testing, and functional prototypes. I enjoy balancing technical performance with usability, manufacturability, safety, and cost while clearly communicating the engineering decisions behind each solution.</p>
+<p>I am a Mechanical Engineering student at Northeastern University with a minor in Aerospace Engineering. I am most energized by hands-on work, whether I am machining tooling on a production floor, iterating a robot, validating a 3D-printed design in ANSYS, or building something simply because I want to understand how well I can make it work. I like taking ownership, learning directly from the people who use a design, and carrying ideas all the way through implementation.</p>
+<div class="about-facts">
+<article class="fact"><strong>Northeastern University</strong><span>Mechanical Engineering with an Aerospace Engineering minor</span></article>
+<article class="fact"><strong>Design → Build</strong><span>CAD, prototyping, machining, assembly, testing, and implementation</span></article>
+<article class="fact"><strong>Hands-on Focus</strong><span>Manufacturing, calisthenics equipment, robotics, rocketry, and personal builds</span></article>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="contact-grid">
+<div>
+<p class="section-kicker">Contact Me</p>
+<h2>Let’s build something worth talking about.</h2>
+<p class="contact-copy">I’m interested in mechanical design, manufacturing, aerospace, robotics, and product-development opportunities.</p>
+</div>
+<div class="contact-actions">
+<a class="contact-link" href="mailto:quartarone.s@northeastern.edu"><span>Email</span><small>quartarone.s@northeastern.edu</small></a>
+<a class="contact-link" href="https://www.linkedin.com/in/stephenquartarone/" rel="noopener" target="_blank"><span>LinkedIn</span><small>View profile ↗</small></a>
+<a class="contact-link" href="resume.pdf" rel="noopener" target="_blank"><span>Résumé</span><small>Open PDF ↗</small></a>
+</div>
+</div>
+</section>
+<footer>
+<span>Stephen Quartarone · Mechanical Engineering</span>
+<span>Northeastern University</span>
+</footer>
+</main>
+</body>
+</html>

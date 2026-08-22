@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W7C1K97H4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5W7C1K97H4');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Parallette Gym Equipment - Stephen Quartarone</title>
+<style>
+:root{
+  --paper:#f5f4ef;--white:#fff;--ink:#101213;--muted:#676c70;
+  --line:#d8d7d1;--accent:#a93229;--dark:#17191a;
+  --shadow:0 18px 45px rgba(18,20,22,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased
+}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+.site-header{
+  position:sticky;top:0;z-index:30;background:rgba(245,244,239,.94);
+  backdrop-filter:blur(15px);border-bottom:1px solid var(--line)
+}
+.nav{
+  max-width:1240px;height:72px;padding:0 28px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between
+}
+.brand{font-size:18px;font-weight:780;letter-spacing:-.02em}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+main{max-width:1240px;margin:auto;padding:0 28px}
+.eyebrow,.meta,.section-kicker{
+  margin:0;text-transform:uppercase;letter-spacing:.13em;
+  font-size:12px;font-weight:800;color:var(--accent)
+}
+.hero{
+  min-height:510px;display:grid;grid-template-columns:1.4fr .8fr;gap:60px;
+  align-items:end;padding:88px 0 68px;border-bottom:1px solid var(--line)
+}
+h1{
+  margin:20px 0 24px;font-size:clamp(58px,8vw,108px);
+  line-height:.91;letter-spacing:-.065em;max-width:900px
+}
+.hero-copy{font-size:21px;line-height:1.55;color:var(--muted);max-width:570px;margin:0}
+.hero-side strong{display:block;font-size:60px;letter-spacing:-.05em}
+.hero-side span{display:block;color:var(--muted);line-height:1.5}
+.projects-head{
+  display:flex;justify-content:space-between;gap:40px;align-items:end;
+  padding:72px 0 30px
+}
+.projects-head h2{font-size:46px;letter-spacing:-.045em;margin:10px 0 0}
+.projects-head p{max-width:440px;color:var(--muted);line-height:1.55;margin:0}
+.project-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;padding-bottom:88px
+}
+.project-card{
+  min-width:0;background:var(--white);border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease
+}
+.project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.thumb-wrap{
+  position:relative;aspect-ratio:16/9;overflow:hidden;
+  background:#ecebe6;display:grid;place-items:center
+}
+.thumb-wrap img{
+  width:100%;height:100%;object-fit:cover;transition:transform .35s ease
+}
+.thumb-wrap.contain img{object-fit:contain;padding:18px;background:#f8f8f6}
+.project-card:hover .thumb-wrap img{transform:scale(1.02)}
+.view-label{
+  position:absolute;right:16px;bottom:16px;padding:9px 12px;
+  border-radius:999px;background:rgba(255,255,255,.94);
+  font-size:12px;font-weight:800;opacity:0;transform:translateY(5px);
+  transition:.25s ease
+}
+.project-card:hover .view-label{opacity:1;transform:none}
+.project-copy{padding:22px 22px 24px}
+.project-copy h2{margin:9px 0 10px;font-size:27px;letter-spacing:-.035em}
+.summary{margin:0;color:var(--muted);line-height:1.55;min-height:50px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{
+  padding:7px 10px;border:1px solid var(--line);border-radius:999px;
+  font-size:12px;font-weight:700;background:#fafaf8
+}
+.about-section,.contact-section{border-top:1px solid var(--line);padding:82px 0}
+.about-grid{
+  display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:start;margin-top:28px
+}
+.about-intro h2,.contact-grid h2{
+  margin:0;font-size:clamp(46px,6vw,76px);line-height:.97;letter-spacing:-.055em
+}
+.about-copy{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.about-copy p{margin:0;color:var(--muted);font-size:18px;line-height:1.72}
+.about-facts{
+  grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px
+}
+.fact{
+  min-height:138px;padding:22px;border:1px solid var(--line);
+  border-radius:18px;background:var(--white)
+}
+.fact strong{
+  display:block;font-size:26px;line-height:1.05;letter-spacing:-.035em;margin-bottom:9px
+}
+.fact span{color:var(--muted);font-size:14px;line-height:1.5}
+.focus-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.focus-list span{
+  padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:var(--white);
+  font-size:13px;font-weight:700
+}
+.contact-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:end
+}
+.contact-copy{
+  margin:22px 0 0;max-width:700px;color:var(--muted);font-size:20px;line-height:1.65
+}
+.contact-actions{display:grid;gap:12px}
+.contact-link{
+  display:flex;justify-content:space-between;align-items:center;
+  min-height:66px;padding:0 20px;border:1px solid var(--line);
+  border-radius:16px;background:var(--white);font-weight:760;
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.contact-link:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.contact-link small{color:var(--muted);font-weight:600}
+footer{
+  border-top:1px solid var(--line);padding:38px 0 50px;
+  display:flex;justify-content:space-between;color:var(--muted);font-size:14px
+}
+.case-nav-back{font-weight:750}
+.case-hero{padding:72px 0 46px}
+.case-hero h1{font-size:clamp(54px,7.5vw,100px);max-width:1080px}
+.case-subtitle{font-size:20px;color:var(--muted);line-height:1.5;max-width:860px}
+.case-meta-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:42px
+}
+.case-meta-item{background:var(--white);padding:22px}
+.case-meta-item small{
+  display:block;color:var(--muted);font-size:11px;text-transform:uppercase;
+  letter-spacing:.12em;font-weight:800;margin-bottom:8px
+}
+.case-meta-item strong{font-size:15px;line-height:1.4}
+.hero-media{
+  border-radius:24px;overflow:hidden;background:#f0efeb;box-shadow:var(--shadow);
+  margin:0 auto 78px;min-height:340px;display:grid;place-items:center
+}
+.hero-media img{
+  width:100%;height:auto;max-height:720px;object-fit:contain;background:#f8f8f6
+}
+.hero-media.photo img{object-fit:cover;max-height:none;aspect-ratio:16/9}
+.impact-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0 0 82px
+}
+.impact-card{
+  background:var(--dark);color:#fff;border-radius:18px;padding:28px;min-height:160px
+}
+.impact-card strong{display:block;font-size:42px;letter-spacing:-.045em;margin-bottom:10px}
+.impact-card span{color:#c8cccf;line-height:1.5}
+.story-section{
+  display:grid;grid-template-columns:.62fr 1.38fr;gap:76px;padding:78px 0;border-top:1px solid var(--line)
+}
+.story-section h2{margin:8px 0 0;font-size:42px;letter-spacing:-.045em;line-height:1}
+.story-copy p{margin:0 0 24px;color:#3f4448;font-size:18px;line-height:1.78}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.gallery figure{
+  margin:0;background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden
+}
+.gallery figure.wide{grid-column:1/-1}
+.gallery img{
+  width:100%;height:420px;object-fit:contain;background:#f7f7f5;padding:12px
+}
+.gallery figure.photo img{object-fit:cover;padding:0}
+.gallery .wide img{height:auto;max-height:720px}
+figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
+.video-frame{
+  border-radius:20px;overflow:hidden;background:#000;margin-top:36px;box-shadow:var(--shadow)
+}
+.video-frame video{width:100%;max-height:760px;background:#000}
+.contributions{
+  list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px
+}
+.contributions li{
+  position:relative;padding:18px 18px 18px 44px;background:var(--white);
+  border:1px solid var(--line);border-radius:14px;line-height:1.55
+}
+.contributions li:before{
+  content:"✓";position:absolute;left:18px;top:18px;color:var(--accent);font-weight:900
+}
+.next-project{
+  margin:72px 0 90px;padding:34px;border-radius:20px;background:var(--dark);color:#fff;
+  display:flex;justify-content:space-between;align-items:center
+}
+.next-project small{
+  display:block;color:#bfc4c7;text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:8px
+}
+.next-project strong{font-size:30px}
+@media(max-width:800px){
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;gap:35px;min-height:auto;padding-top:68px}
+  .hero-side strong{font-size:48px}
+  .projects-head{align-items:start;flex-direction:column}
+  .project-grid{grid-template-columns:1fr}
+  .about-grid,.contact-grid,.story-section{grid-template-columns:1fr;gap:38px}
+  .about-copy{grid-template-columns:1fr}
+  .about-facts,.impact-strip,.case-meta-grid{grid-template-columns:1fr}
+  .about-section,.contact-section{padding:64px 0}
+  .gallery,.contributions{grid-template-columns:1fr}
+  .gallery figure.wide{grid-column:auto}
+  .gallery img{height:auto;max-height:600px}
+  .hero-media{min-height:0}
+  footer{flex-direction:column;gap:10px}
+}
+
+/* Final image-fit and navigation refinements */
+.thumb-wrap img{
+  object-fit:contain !important;
+  padding:14px;
+  background:#f8f8f6;
+}
+.hero-media img{
+  object-fit:contain !important;
+  width:100%;
+  height:auto !important;
+  max-height:680px;
+  padding:16px;
+  background:#f8f8f6;
+}
+.hero-media.photo img{
+  object-fit:contain !important;
+  aspect-ratio:auto !important;
+  max-height:680px !important;
+}
+.gallery img,
+.gallery figure.photo img{
+  object-fit:contain !important;
+  height:auto !important;
+  max-height:620px;
+  padding:12px !important;
+  background:#f8f8f6;
+}
+.project-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin:72px 0 90px;
+}
+.project-actions .next-project{
+  margin:0;
+}
+@media(max-width:800px){
+  .project-actions{grid-template-columns:1fr}
+}
+
+/* v9 image sizing and summary-page refinements */
+.thumb-wrap{
+  aspect-ratio:16/10 !important;
+  min-height:0 !important;
+}
+.thumb-wrap img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:12px !important;
+  background:#f8f8f6 !important;
+}
+.hero-media{
+  width:100%;
+  max-width:1120px;
+  min-height:0 !important;
+}
+.hero-media img{
+  width:100% !important;
+  height:auto !important;
+  max-height:620px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:14px !important;
+}
+.gallery{
+  align-items:start;
+}
+.gallery img,
+.gallery figure.photo img{
+  width:100% !important;
+  height:auto !important;
+  max-height:560px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:10px !important;
+}
+.gallery figure.wide img{
+  max-height:640px !important;
+}
+.real-world-photo img{
+  max-height:720px !important;
+}
+.tldr-hero{
+  padding:82px 0 52px;
+  border-bottom:1px solid var(--line);
+}
+.tldr-hero h1{
+  font-size:clamp(52px,7vw,90px);
+  max-width:980px;
+}
+.tldr-intro{
+  max-width:780px;
+  color:var(--muted);
+  font-size:20px;
+  line-height:1.6;
+}
+.tldr-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+  padding:50px 0 90px;
+}
+.tldr-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+  display:flex;
+  flex-direction:column;
+  min-height:270px;
+}
+.tldr-card .meta{margin-bottom:10px}
+.tldr-card h2{
+  margin:0 0 14px;
+  font-size:28px;
+  letter-spacing:-.035em;
+}
+.tldr-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+  font-size:16px;
+}
+.tldr-card .tldr-link{
+  margin-top:auto;
+  padding-top:22px;
+  font-weight:800;
+}
+.inline-callout{
+  margin:28px 0 0;
+  padding:20px 22px;
+  border-left:3px solid var(--accent);
+  background:rgba(255,255,255,.65);
+  color:#3f4448;
+  line-height:1.65;
+}
+@media(max-width:800px){
+  .tldr-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<a class="brand" href="index.html">Stephen Quartarone</a>
+<div class="nav-links">
+<a href="index.html#projects">Projects</a><a href="tldr.html">TLDR</a>
+<a href="index.html#about">About</a>
+<a href="index.html#contact">Contact</a>
+<a href="resume.pdf" rel="noopener" target="_blank">Résumé</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="case-hero">
+<a class="case-nav-back" href="index.html#projects">← Back to projects</a>
+<p class="eyebrow" style="margin-top:52px">Personal Project · 3D Printing · FEA</p>
+<h1>Parallette Gym Equipment</h1>
+<p class="case-subtitle">A 3D-printed parallette designed for repeated calisthenics use and validated through finite element analysis.</p>
+<div class="case-meta-grid">
+<div class="case-meta-item"><small>Organization</small><strong>Personal Project</strong></div>
+<div class="case-meta-item"><small>Date</small><strong>2026</strong></div>
+<div class="case-meta-item"><small>Role</small><strong>Designer, User, and Analyst</strong></div>
+<div class="case-meta-item"><small>Core Skills</small><strong>SolidWorks · 3D Printing · ANSYS Mechanical</strong></div>
+</div>
+</section>
+<div class="hero-media real-world-photo"><img alt="Completed 3D-printed parallettes with rubber grip feet and wood handles" src="parallette-real-life.jpeg"/></div>
+<section class="impact-strip"><div class="impact-card"><strong>228 N</strong><span>Representative one-arm push-up load</span></div><div class="impact-card"><strong>0.90 MPa</strong><span>Maximum von Mises stress</span></div><div class="impact-card"><strong>4 days/week</strong><span>Real-world usage frequency</span></div></section>
+<section class="story-section">
+<div>
+<p class="section-kicker">Project Overview</p>
+<h2>A personal product built for real use.</h2>
+</div>
+<div class="story-copy">
+<p>This project began as a way to design a practical piece of gym equipment that I would actually use. I created a compact parallette for calisthenics training and now use it four days a week.</p><p>The project is also a good example of how strong and capable 3D-printed parts can be when the geometry and load path are designed properly.</p>
+</div>
+</section>
+<section class="story-section">
+<div>
+<p class="section-kicker">Design Intent</p>
+<h2>Simple geometry with a clear structural load path.</h2>
+</div>
+<div class="story-copy">
+<p>The parallette uses a cylindrical handle supported by two printed side legs. The geometry keeps the design stable, easy to grip, and straightforward to manufacture while still directing the highest loads through predictable structural regions.</p><p>I focused on creating a design that looked clean, felt solid in use, and could demonstrate the real-world potential of printed fitness equipment.</p>
+<div class="gallery"><figure><img alt="Original full-support parallette CAD design" src="parallette-render-2.jpg"/><figcaption>Original full-support CAD design used as the baseline for strength, stability, and manufacturability.</figcaption></figure><figure class="photo"><img alt="Finished parallettes showing rubber grip feet" src="parallette-real-life.jpeg"/><figcaption>Finished parallettes in use-ready form. Rubber grip pads on the feet improve floor traction and protect the printed surfaces.</figcaption></figure></div>
+</div>
+</section>
+<section class="story-section"><div><p class="section-kicker">Design Optimization</p><h2>Half the material without sacrificing the load target.</h2></div><div class="story-copy"><p>I redesigned the side supports with material-saving cutouts to make the product faster and cheaper to manufacture. The lighter version reduced filament use and print time by approximately 50 percent while maintaining the same intended load target.</p><p>The smaller footprint also allowed twice as many support parts to fit on a single printer bed. That matters because 3D-printing cost is not just material cost. It is also machine time, bed capacity, and how many parts can be produced in each print cycle.</p><p>A cost comparison showed the budget design reducing estimated manufacturing cost from $18.99 to $11.43 per set, a 39.8 percent reduction. At the same $35 selling price, the estimated margin increased from 45.7 percent to 67.4 percent.</p><div class="gallery"></div></div></section><section class="story-section">
+<div>
+<p class="section-kicker">Finite Element Analysis</p>
+<h2>Validating the design with ANSYS.</h2>
+</div>
+<div class="story-copy">
+<p>To evaluate the structural integrity of the parallette, I performed a static finite element analysis in ANSYS Mechanical. A 228 N downward load was applied to the handle, representing the approximate force exerted by one arm during a standard push-up by a 160 lb user. The feet were constrained to simulate contact with the ground.</p><p>The analysis produced a maximum von Mises stress of 0.90 MPa, concentrated near the handle-to-leg transition where the highest bending stresses occur. This stress is significantly below the yield strength of common 3D-printing materials, indicating that the design can safely withstand the expected loading conditions with a substantial factor of safety.</p><p>The simulation also confirmed that the highest stresses occur in the anticipated critical region, validating the overall geometry and load path of the design.</p>
+<p>Scaling the same load case from a 160 lb user to a 200 lb user increases the predicted stress from 0.90 MPa to approximately 1.13 MPa, which remains very low relative to typical printed-plastic strength values. This supports use by a 200 lb person under the same assumptions. The simulation was not a destructive certification test, so I do not present it as a verified maximum weight rating.</p><div class="gallery"><figure class="wide"><img alt="ANSYS Mechanical equivalent stress result for the parallette" src="parallette-fea.png"/><figcaption>ANSYS Mechanical equivalent von Mises stress result for the 228 N representative one-arm push-up load case.</figcaption></figure></div></div>
+</section>
+<section class="story-section">
+<div>
+<p class="section-kicker">Outcome</p>
+<h2>Validated in analysis and in training.</h2>
+</div>
+<div class="story-copy">
+<p>Beyond simulation, the project has also been validated through repeated real-world use in calisthenics training. Using the equipment regularly helped confirm that the design performs as intended and reinforced the broader point that 3D-printed parts can be far stronger and more useful than many people expect.</p><p>This project strengthened my skills in product design, structural thinking, and simulation-based validation while showing how engineering analysis can support practical prototyping decisions.</p>
+<div class="inline-callout">What this study showed me: additive manufacturing can produce genuinely useful structural products when the geometry, load path, print strategy, and material use are treated as engineering decisions rather than just printing decisions.</div></div>
+</section>
+<section class="story-section">
+<div>
+<p class="section-kicker">My Contributions</p>
+<h2>What I owned and delivered.</h2>
+</div>
+<div><ul class="contributions"><li>Designed and 3D printed a functional parallette for repeated calisthenics training</li><li>Reduced filament use and print time by approximately 50 percent while fitting twice as many parts on the print bed</li><li>Built and interpreted a representative static structural analysis in ANSYS Mechanical</li><li>Validated the design through regular real-world use and a scaled 200 lb user load case</li></ul></div>
+</section>
+<div class="project-actions"><a class="next-project" href="dual-cavity.html"><div><small>Continue browsing</small><strong>Go back to the first project</strong></div><span>→</span></a><a class="next-project" href="index.html#about"><div><small>Learn more</small><strong>Meet me</strong></div><span>→</span></a></div>
+<footer>
+<span>Stephen Quartarone · Mechanical Engineering</span>
+<span>Northeastern University</span>
+</footer>
+</main>
+</body>
+</html>
