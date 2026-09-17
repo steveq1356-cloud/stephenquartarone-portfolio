@@ -392,6 +392,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style></head>
 <body><header class="site-header"><nav class="nav">
 <a class="brand" href="index.html">Stephen Quartarone</a>
@@ -421,8 +425,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div><p class="section-kicker">Results</p><h2>Faster, safer, and more repeatable.</h2></div>
 <div class="story-copy"><p>Demolding time dropped from approximately 12 minutes to 2 minutes. The redesign eliminated loose hardware, reduced mallet use, maintained alignment, produced straighter parts, and eliminated leakage caused by misaligned mold faces.</p><p>Implementation cost was approximately $100-$200 per mold because the system used mostly scrap aluminum and standard hardware.</p></div>
 </section>
-<section class="story-section"><div><p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2></div><div><ul class="contributions"><li>Observed operators and quantified the recurring demolding bottleneck</li><li>Designed a retained swing-bolt system that eliminated complete bolt removal</li><li>Machined the aluminum components and coordinated CNC drilling and tapping</li><li>Installed the system and validated the improvement through production time studies</li></ul></div></section>
+
 <a class="next-project" href="mold-extensions.html"><div><small>Next project</small>
 <strong>Polyurethane Mold Extension System</strong></div><span>→</span></a>
 <footer><span>Stephen Quartarone · Mechanical Engineering</span><span>Northeastern University</span></footer>

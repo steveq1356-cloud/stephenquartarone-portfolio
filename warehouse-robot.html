@@ -386,6 +386,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style></head>
 <body><header class="site-header"><nav class="nav">
 <a class="brand" href="index.html">Stephen Quartarone</a>
@@ -419,8 +423,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div><p class="section-kicker">Final System</p><h2>Mechanical and electrical systems working together.</h2></div>
 <div class="story-copy"><p>The final robot integrated a scissor lift, line-following sensors, ultrasonic distance sensing, and an Arduino-controlled drivetrain into a single autonomous platform.</p><p>The project strengthened my understanding of mechanical design, rapid prototyping, interdisciplinary integration, and continuous improvement throughout product development.</p></div>
 </section>
-<section class="story-section"><div><p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2></div><div><ul class="contributions"><li>Designed mechanical components and the lift architecture in Autodesk Fusion 360</li><li>Iterated the rack-and-pinion scissor lift to improve strength, friction, and assembly</li><li>3D printed the components and integrated them with the Arduino-controlled platform</li><li>Tested and refined the complete system with teammates across mechanical, electrical, and software work</li></ul></div></section>
+
 <a class="next-project" href="parallettes.html"><div><small>Next project</small>
 <strong>Parallette Gym Equipment</strong></div><span>→</span></a>
 <footer><span>Stephen Quartarone · Mechanical Engineering</span><span>Northeastern University</span></footer>

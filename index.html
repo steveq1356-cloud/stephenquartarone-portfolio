@@ -373,6 +373,39 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Compact portfolio layout and uncropped media */
+.hero{
+  padding:58px 0 48px !important;
+}
+.hero h1{font-size:clamp(52px,7vw,88px);margin:16px 0 18px}
+.projects-head{padding:52px 0 24px}
+.project-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  padding-bottom:68px;
+}
+.thumb-wrap{aspect-ratio:4/3 !important}
+.thumb-wrap img{
+  object-fit:contain !important;
+  padding:10px !important;
+}
+.project-copy{padding:17px 18px 19px}
+.project-copy h2{font-size:23px}
+.summary{min-height:0}
+.about-intro{display:flex;flex-direction:column;gap:22px}
+.headshot{
+  width:min(100%,300px);
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:20px;
+  border:1px solid var(--line);
+}
+@media(max-width:1000px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){
+  .hero{padding:48px 0 38px !important}
+  .project-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -478,7 +511,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 </a>
 <a class="project-card" href="parallettes.html">
 <div class="thumb-wrap">
-<img alt="Parallette Gym Equipment" src="parallette-render-1.jpg"/>
+<img alt="White modular parallette gym equipment" src="white-parallettes.png"/>
 <span class="view-label">View project ↗</span>
 </div>
 <div class="project-copy">
@@ -495,6 +528,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div class="about-grid">
 <div class="about-intro">
 <h2>Stephen Quartarone</h2>
+<img class="headshot" src="headshot.jpg" alt="Stephen Quartarone headshot"/>
 <div class="focus-list">
 <span>Mechanical Design</span><span>Manufacturing</span><span>Robotics</span>
 <span>Aerospace</span><span>Rapid Prototyping</span><span>3D Printing</span>

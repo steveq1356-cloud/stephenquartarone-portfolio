@@ -387,6 +387,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style></head>
 <body><header class="site-header"><nav class="nav">
 <a class="brand" href="index.html">Stephen Quartarone</a>
@@ -420,8 +424,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div><p class="section-kicker">Execution</p><h2>Complete ownership from stock to production.</h2></div>
 <div class="story-copy"><p>I designed every component in SolidWorks, sourced materials, hardware, O-rings, and tooling, purchased a metal-cutting circular saw, processed the aluminum stock, machined every component in-house, and personally assembled the completed system.</p><p>The finished extensions enabled production to begin manufacturing parts that met the new specification while the permanent mold continued through development.</p></div>
 </section>
-<section class="story-section"><div><p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2></div><div><ul class="contributions"><li>Reverse engineered the existing concept and redesigned it as a bottom-mounted extension system</li><li>Avoided the coating delay by reusing coated aluminum and developing a practical release-surface workaround</li><li>Hand-cut the aluminum stock, machined the components, and assembled the complete system</li><li>Delivered the project from concept to production in two weeks while protecting an estimated $40,000 per day</li></ul></div></section>
+
 <a class="next-project" href="test-molds.html"><div><small>Next project</small>
 <strong>Polyurethane Test Molds</strong></div><span>→</span></a>
 <footer><span>Stephen Quartarone · Mechanical Engineering</span><span>Northeastern University</span></footer>

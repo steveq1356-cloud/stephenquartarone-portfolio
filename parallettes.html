@@ -366,6 +366,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style>
 </head>
 <body>
@@ -393,7 +397,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div class="case-meta-item"><small>Core Skills</small><strong>SolidWorks · 3D Printing · ANSYS Mechanical</strong></div>
 </div>
 </section>
-<div class="hero-media real-world-photo"><img alt="Completed 3D-printed parallettes with rubber grip feet and wood handles" src="parallette-real-life.jpeg"/></div>
+
 <section class="impact-strip"><div class="impact-card"><strong>228 N</strong><span>Representative one-arm push-up load</span></div><div class="impact-card"><strong>0.90 MPa</strong><span>Maximum von Mises stress</span></div><div class="impact-card"><strong>4 days/week</strong><span>Real-world usage frequency</span></div></section>
 <section class="story-section">
 <div>
@@ -431,13 +435,6 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div class="story-copy">
 <p>Beyond simulation, the project has also been validated through repeated real-world use in calisthenics training. Using the equipment regularly helped confirm that the design performs as intended and reinforced the broader point that 3D-printed parts can be far stronger and more useful than many people expect.</p><p>This project strengthened my skills in product design, structural thinking, and simulation-based validation while showing how engineering analysis can support practical prototyping decisions.</p>
 <div class="inline-callout">What this study showed me: additive manufacturing can produce genuinely useful structural products when the geometry, load path, print strategy, and material use are treated as engineering decisions rather than just printing decisions.</div></div>
-</section>
-<section class="story-section">
-<div>
-<p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2>
-</div>
-<div><ul class="contributions"><li>Designed and 3D printed a functional parallette for repeated calisthenics training</li><li>Reduced filament use and print time by approximately 50 percent while fitting twice as many parts on the print bed</li><li>Built and interpreted a representative static structural analysis in ANSYS Mechanical</li><li>Validated the design through regular real-world use and a scaled 200 lb user load case</li></ul></div>
 </section>
 <div class="project-actions"><a class="next-project" href="dual-cavity.html"><div><small>Continue browsing</small><strong>Go back to the first project</strong></div><span>→</span></a><a class="next-project" href="index.html#about"><div><small>Learn more</small><strong>Meet me</strong></div><span>→</span></a></div>
 <footer>

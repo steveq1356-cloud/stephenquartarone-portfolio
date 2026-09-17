@@ -385,6 +385,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style></head>
 <body><header class="site-header"><nav class="nav">
 <a class="brand" href="index.html">Stephen Quartarone</a>
@@ -414,8 +418,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div><p class="section-kicker">Project Leadership</p><h2>Design grew into a department-scale program.</h2></div>
 <div class="story-copy"><p>I led weekly cross-functional meetings to present design decisions, review milestones, discuss manufacturing feasibility, and track cost and schedule.</p><p>I coordinated with machinists, mechanical engineers, chemical engineers, process engineers, finance, purchasing, and production. Before leaving, I finalized the design work, organized documentation, sourced materials, and completed a formal handoff.</p></div>
 </section>
-<section class="story-section"><div><p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2></div><div><ul class="contributions"><li>Disassembled and rebuilt the existing molds to understand their operation and identify weaknesses</li><li>Designed a dual-cavity mold that doubled production without increasing floor space</li><li>Developed the hinged opening and quick-clamp system to improve alignment and ergonomics</li><li>Led cross-functional design reviews and prepared the project for manufacturing handoff</li></ul></div></section>
+
 <a class="next-project" href="swing-bolt.html"><div><small>Next project</small>
 <strong>Swing Bolt Demold System</strong></div><span>→</span></a>
 <footer><span>Stephen Quartarone · Mechanical Engineering</span><span>Northeastern University</span></footer>

@@ -386,6 +386,10 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 @media(max-width:800px){
   .tldr-grid{grid-template-columns:1fr}
 }
+
+/* Consistent uncropped media */
+.hero-media, .gallery figure { min-height:0 !important; }
+.hero-media img, .hero-media.photo img, .gallery img, .gallery figure.photo img, .gallery figure.wide img { width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; }
 </style></head>
 <body><header class="site-header"><nav class="nav">
 <a class="brand" href="index.html">Stephen Quartarone</a>
@@ -419,8 +423,7 @@ figcaption{padding:13px 16px;color:var(--muted);font-size:13px;line-height:1.45}
 <div><p class="section-kicker">Implementation</p><h2>A complete testing station, not just individual molds.</h2></div>
 <div class="story-copy"><p>Once all parts arrived, I personally assembled and inspected all six molds, verified fit and sealing, and prepared them for production use.</p><p>I also sourced a heavy-duty rolling table, drilled and mounted each mold directly to its surface, and created a stable test station that prevented movement during operation.</p><p>The completed molds entered production successfully, sealed without leakage, met the required specifications, and continue to support daily Polyurethane testing.</p><p>Before the end of my co-op, I also prepared three additional molds for the next production phase so the testing capacity could expand as manufacturing continued to ramp up.</p></div>
 </section>
-<section class="story-section"><div><p class="section-kicker">My Contributions</p>
-<h2>What I owned and delivered.</h2></div><div><ul class="contributions"><li>Designed six production test molds and prepared three additional molds for future production growth</li><li>Integrated the required curing block and lifting handles into a durable, operator-friendly design</li><li>Managed vendor selection, procurement, and cross-functional coordination through fabrication</li><li>Personally assembled, inspected, and mounted the molds into a leak-free rolling test station</li></ul></div></section>
+
 <a class="next-project" href="wire-saw.html"><div><small>Next project</small>
 <strong>Temporary Wire Saw Containment Enclosure</strong></div><span>→</span></a>
 <footer><span>Stephen Quartarone · Mechanical Engineering</span><span>Northeastern University</span></footer>
